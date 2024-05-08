@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todolist/controller.dart';
-import 'package:todolist/layout/ipadlayout.dart';
-import 'package:todolist/layout/pclayout.dart';
-import 'package:todolist/layout/phonelayout.dart';
+import 'package:todolist/layout/phoneLayoutH.dart';
+import 'package:todolist/layout/phonelayoutV.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,13 +23,12 @@ class _MyAppState extends State<MyApp> {
 
   Widget build(BuildContext context) {
     double widthscreen = MediaQuery.of(context).size.width;
+    double heightscreen = MediaQuery.of(context).size.height;
+    print("widthscreen : $widthscreen");
+    print("heightscreen : $heightscreen");
+
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: widthscreen > 1110
-          ? const PCLayout()
-          : widthscreen > 600 && widthscreen <= 1109
-              ? const IpadLayout()
-              : PhoneLayout(),
-    );
+        debugShowCheckedModeBanner: false,
+        home: widthscreen <= 600 ? PhoneLayoutV() : phoneLayoutH());
   }
 }
