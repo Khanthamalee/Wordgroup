@@ -1,4 +1,4 @@
-### [In line link style](https://play.google.com/apps/internaltest/4701404126356715737 "Test")
+### [Test](https://play.google.com/apps/internaltest/4701404126356715737 "Test")
 
 
 !<img src="https://github.com/Khanthamalee/Wordgroup/blob/main/assets/upoloadtogoogleplay/main1.jpg" width="200" style="max-width: 100%;">
